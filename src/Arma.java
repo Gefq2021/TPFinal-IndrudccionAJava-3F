@@ -37,5 +37,5 @@ abstract class Arma {
         return "ES USO".equals(this.estado) && this.calibre >= 9;
     }
 
-    public abstract String getTipArma();
+    public abstract String getTipoArma();
 }

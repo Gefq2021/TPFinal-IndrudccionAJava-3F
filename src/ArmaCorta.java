@@ -11,7 +11,7 @@ public class ArmaCorta extends Arma {
     }
 
     @Override
-    public String getTipArma() {
+    public String getTipoArma() {
         return "Corta";
     }
 }
