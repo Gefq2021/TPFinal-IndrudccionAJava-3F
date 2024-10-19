@@ -13,5 +13,29 @@ abstract class Arma {
         this.estado = estado;
     }
 
-    public abstract boolean enCondicion();
+    public int getCantMuniciones() {
+        return cantMuniciones;
+    }
+
+    public double getAlcance() {
+        return alcance;
+    }
+
+    public int getCalibre() {
+        return calibre;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public boolean enCondicion() {
+        return "ES USO".equals(this.estado) && this.calibre >= 9;
+    }
+
+    public abstract String getTipArma();
 }
