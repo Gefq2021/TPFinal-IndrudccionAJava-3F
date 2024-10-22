@@ -1,16 +1,22 @@
 abstract class Arma {
+    private Policia policia;
     private int cantMuniciones;
     private double alcance;
     private String marca;
     private int calibre;
     private String estado;
 
-    public Arma(int cantMuniciones, double alcance, String marca, int calibre, String estado) {
+    public Arma(Policia policia ,int cantMuniciones, double alcance, String marca, int calibre, String estado) {
+        this.policia = policia;
         this.cantMuniciones = cantMuniciones;
         this.alcance = alcance;
         this.marca = marca;
         this.calibre = calibre;
         this.estado = estado;
+    }
+
+    public Policia getPolicia() {
+        return policia;
     }
 
     public int getCantMuniciones() {
