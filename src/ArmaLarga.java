@@ -3,8 +3,8 @@ public class ArmaLarga extends Arma {
     private String descripcionUso;
     private int nivel;
 
-    public ArmaLarga(int cantMuniciones, double alcance, String marca, int calibre, String estado, boolean selloRENAR, String descripcionUso, int nivel) {
-        super(cantMuniciones, alcance, marca, calibre, estado);
+    public ArmaLarga(Policia policia ,int cantMuniciones, double alcance, String marca, int calibre, String estado, boolean selloRENAR, String descripcionUso, int nivel) {
+        super(policia, cantMuniciones, alcance, marca, calibre, estado);
         this.selloRENAR = selloRENAR;
         this.descripcionUso = descripcionUso;
         this.nivel = nivel;
