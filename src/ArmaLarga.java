@@ -10,6 +10,30 @@ public class ArmaLarga extends Arma {
         this.nivel = nivel;
     }
 
+    public boolean isSelloRENAR() {
+        return selloRENAR;
+    }
+
+    public void setSelloRENAR(boolean selloRENAR) {
+        this.selloRENAR = selloRENAR;
+    }
+
+    public String getDescripcionUso() {
+        return descripcionUso;
+    }
+
+    public void setDescripcionUso(String descripcionUso) {
+        this.descripcionUso = descripcionUso;
+    }
+
+    public int getNivel() {
+        return nivel;
+    }
+
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
     @Override
     public String getTipoArma() {
         return "Larga";
