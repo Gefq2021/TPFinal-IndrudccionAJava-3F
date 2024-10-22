@@ -6,6 +6,14 @@ public class ArmaCorta extends Arma {
         this.esAutomatica = esAutomatica;
     }
 
+    public boolean isEsAutomatica() {
+        return esAutomatica;
+    }
+
+    public void setEsAutomatica(boolean esAutomatica) {
+        this.esAutomatica = esAutomatica;
+    }
+
     public boolean efectividadMts() {
         return super.getAlcance() > 200;
     }
