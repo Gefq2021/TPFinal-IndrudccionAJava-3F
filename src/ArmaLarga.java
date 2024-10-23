@@ -1,4 +1,4 @@
-public class ArmaLarga extends Arma {
+public class ArmaLarga extends Arma implements Comparable {
     private boolean selloRENAR;
     private String descripcionUso;
     private int nivel;
@@ -37,5 +37,11 @@ public class ArmaLarga extends Arma {
     @Override
     public String getTipoArma() {
         return "Larga";
+    }
+
+    @Override
+    public int compareTo(Object arma) {
+        ArmaLarga otraArma = (ArmaLarga) arma;
+        return Integer.compare(this.nivel, otraArma.nivel);
     }
 }
