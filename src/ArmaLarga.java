@@ -47,6 +47,6 @@ public class ArmaLarga extends Arma implements Comparable {
 
     @Override
     public String toString() {
-        return "Datos del Arma:\n" + " Usuario: " + super.getPolicia() + "\n Cantidad de Municiones: " + super.getCantMuniciones() + "\n Alcance: " + super.getAlcance() + "\n Marca: " + super.getMarca() + "\n Calibre: " + super.getCalibre() + "\n Estado: " + super.getEstado() + "\n Sello del RENAR: " + this.selloRENAR + "\n Descripción: " + this.descripcionUso + "\n Nivel: " + this.nivel;
+        return "\nDATOS DEL ARMA:" + "\nTipo de Arma: " + getTipoArma() + "\n" + super.getPolicia() + "\nCantidad de Municiones: " + super.getCantMuniciones() + "\nAlcance: " + super.getAlcance() + "\nMarca: " + super.getMarca() + "\nCalibre: " + super.getCalibre() + "\nEstado: " + super.getEstado() + "\nSello del RENAR: " + this.selloRENAR + "\nDescripción: " + this.descripcionUso + "\nNivel: " + this.nivel;
     }
 }

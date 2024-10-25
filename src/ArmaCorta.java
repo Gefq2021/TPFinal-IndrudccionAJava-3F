@@ -25,6 +25,6 @@ public class ArmaCorta extends Arma {
 
     @Override
     public String toString() {
-        return "Datos del Arma:\n" + " Usuario: " + super.getPolicia() + "\n Cantidad de Municiones: " + super.getCantMuniciones() + "\n Alcance: " + super.getAlcance() + "\n Marca: " + super.getMarca() + "\n Calibre: " + super.getCalibre() + "\n Estado: " + super.getEstado() + "\n Es Automatica: " + this.esAutomatica;
+        return "\nDAROS DEL ARMA:" + "\nTipo de Arma: " + getTipoArma() + "\n" + super.getPolicia() + "\nCantidad de Municiones: " + super.getCantMuniciones() + "\nAlcance: " + super.getAlcance() + "\nMarca: " + super.getMarca() + "\nCalibre: " + super.getCalibre() + "\nEstado: " + super.getEstado() + "\nEs Automatica: " + this.esAutomatica;
     }
 }
