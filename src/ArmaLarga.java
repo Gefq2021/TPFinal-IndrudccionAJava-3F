@@ -44,4 +44,9 @@ public class ArmaLarga extends Arma implements Comparable {
         ArmaLarga otraArma = (ArmaLarga) arma;
         return Integer.compare(this.nivel, otraArma.nivel);
     }
+
+    @Override
+    public String toString() {
+        return "Datos del Arma:\n" + " Usuario: " + super.getPolicia() + "\n Cantidad de Municiones: " + super.getCantMuniciones() + "\n Alcance: " + super.getAlcance() + "\n Marca: " + super.getMarca() + "\n Calibre: " + super.getCalibre() + "\n Estado: " + super.getEstado() + "\n Sello del RENAR: " + this.selloRENAR + "\n Descripción: " + this.descripcionUso + "\n Nivel: " + this.nivel;
+    }
 }
